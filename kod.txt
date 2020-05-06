@@ -1,0 +1,34 @@
+static void Main(string[] args)
+        
+{
+
+// 123456789 deðerinde olan sayýyý ikilik sayý sistemine çevirme iþlemi
+
+          
+ uint a = 123456789;
+         
+string s = " ";
+
+            
+int b = 1;
+
+            
+for ( int i = 0; i<32; i++)
+            
+{
+              
+if ((a & b) == 1) s = "1" + s;
+                
+else s = "0" + s;
+            
+ a = a >> 1;
+           
+ }
+            
+Console.Write(s);
+
+         
+            
+Console.ReadLine();
+
+}
